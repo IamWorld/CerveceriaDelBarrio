@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cervecería del Barrio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900" x-data="{ page: 'home' }">
+    <header class="bg-[#FBB03B] text-white p-5 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="https://ibb.co/Fq6tXCYR">
+                <img src="https://i.ibb.co/M5nLfQ1F/IMG-20250117-WA0002.jpg" alt="IMG-20250117-WA0002" class="mr-3 h-24 w-auto">
+            </a>
+            <h1 class="text-2xl font-bold">La Cervecería del Barrio</h1>
+        </div>
+        <nav>
+            <button @click="page = 'home'" class="px-4 py-2 bg-white text-yellow-600 rounded">Inicio</button>
+            <button @click="page = 'historia'" class="px-4 py-2 bg-white text-yellow-600 rounded">Historia</button>
+            <button @click="page = 'catalogo'" class="px-4 py-2 bg-white text-yellow-600 rounded">Cervezas</button>
+        </nav>
+    </header>
+        
+    <main>
+        <!-- Página Home -->
+        <section x-show="page === 'home'" class="container mx-auto p-6 text-center">
+            <section x-show="page === 'home'" class="container mx-auto p-6 text-center relative">
+    <video autoplay muted loop controls class="mx-auto w-full max-w-full h-[300px] object-cover rounded mb-4">
+        <source src="https://videos.pexels.com/video-files/2356468/2356468-uhd_2560_1440_24fps.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+    </video>
+   <h2 class="absolute inset-0 flex items-center justify-center text-5xl font-light text-white mb-4 uppercase shadow-lg" style="font-family: 'Playfair Display SC', serif; text-shadow: 1px 1px 0px #000000;">
+    DESCUBRE TU ARTESANAL FAVORITA
+</h2>
+</section>
+
+           <div class="flex justify-center items-center mt-20 mb-20">
+    <a href="https://ibb.co/TNZzzSX">
+        <img src="https://i.ibb.co/rXgnnSP/IMG-20250117-WA0003.jpg" alt="IMG-20250117-WA0003" class="h-56 mr-6" />
+    </a>
+    <p class="text-2xl font-normal text-black text-left leading-snug font-[Playfair Display SC] uppercase">
+        Disfruta de la esencia artesanal, <br>
+        creada para compartir <br>
+        y celebrar la vida.
+    </p>
+</div>
+
+
+
+            <h2 class="text-2xl font-semibold mt-6" style="font-family: 'Playfair Display SC', serif;">Marcas Aliadas</h2>
+
+<div class="flex justify-center space-x-6 mt-4">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/kgcFKySN/Imagen-de-Whats-App-2025-01-28-a-las-11-25-20-23f10c5e.jpg" alt="Imagen de WhatsApp" class="h-16"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/ZzRqh7Q6/Imagen-de-Whats-App-2025-01-28-a-las-11-25-02-fbeb8a13.jpg" alt="Imagen de WhatsApp" class="h-16"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/wNHk3Pwk/Imagen-de-Whats-App-2025-01-28-a-las-11-24-41-cbd0a0db.jpg" alt="Imagen de WhatsApp" class="h-16"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/mVt2x0Pk/Imagen-de-Whats-App-2025-01-28-a-las-11-24-18-70e62f78.jpg" alt="Imagen de WhatsApp" class="h-16"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/VctpynV5/Imagen-de-Whats-App-2025-01-28-a-las-11-24-01-f7939604.jpg" alt="Imagen de WhatsApp" class="h-16"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/ZpD84n5T/Imagen-de-Whats-App-2025-01-28-a-las-11-23-45-cdc698c8.jpg" alt="Imagen de WhatsApp" class="h-16"></a>
+    <!-- Nuevas imágenes añadidas -->
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/x8zkNrL5/Boticario.jpg" alt="Boticario" class="h-16"></a>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/20VrXWtb/Cervestial.jpg" alt="Cervestial" class="h-16"></a>
+    <a href="https://ibb.co/mCBZP9tH"><img src="https://i.ibb.co/QFcSxPn6/Tierra-baja.jpg" alt="Tierra Baja" class="h-16"></a>
+</div>
+
+            <!-- Información adicional para la página Home -->
+            <h2 class="text-2xl font-semibold mt-6" style="font-family: 'Playfair Display SC', serif;">Visítanos</h2>
+            <img src="https://source.unsplash.com/800x400/?map" class="mx-auto rounded mb-4">
+            <a href="https://ibb.co/CKZXRsnp">
+    <img src="https://i.ibb.co/7t5TsNGx/Imagen-de-Whats-App-2025-02-15-a-las-20-06-24-8242477d.jpg" alt="Imagen de WhatsApp" class="mx-auto h-56 mt-4">
+</a>
+            <h3 class="text-2xl font-semibold mt-6" style="font-family: 'Playfair Display SC', serif;">Ubicación</h3>
+            <p class="text-lg mt-2" style="font-family: 'Playfair Display SC', serif;">Cra 81A #50-21, Calasanz, Medellín, Antioquia</p>
+            <p class="mt-4" style="font-family: 'Playfair Display SC', serif;">
+    Estamos ubicados en la mejor esquina cervecera de la ciudad. ¡Ven y disfruta de la mejor experiencia cervecera con nosotros!
+</p>
+        </section>
+        
+        <!-- Página Historia -->
+        <section x-show="page === 'historia'" class="container mx-auto p-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Nuestra Historia</h2>
+            <p class="text-lg">Desde tiempos antiguos, la cerveza ha sido una bebida celebrada en todo el mundo. Nuestra cervecería nació con la misión de continuar esta tradición, ofreciendo cervezas artesanales de la más alta calidad para acompañar cada momento especial.</p>
+        </section>
+
+        <!-- Página Catálogo -->
+        <section x-show="page === 'catalogo'" class="container mx-auto p-6 text-center font-[Playfair Display SC]">
+    <h2 class="text-3xl font-semibold mb-4 font-[Playfair Display SC]"></h2>
+    <a href="https://imgbb.com/">
+        <img src="https://i.ibb.co/KjymfY5N/Estilos-de-cerveza.png" alt="Estilos-de-cerveza" class="mx-auto mb-10">
+    </a>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-4 rounded shadow-lg">
+            <h3 class="text-xl font-semibold">Cerveza Estándar</h3>
+            <p class="text-gray-700">Sabor equilibrado y refrescante - $15.000</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-lg">
+            <h3 class="text-xl font-semibold">Cerveza Plus</h3>
+            <p class="text-gray-700">Mayor intensidad y cuerpo - $17.000</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-lg">
+            <h3 class="text-xl font-semibold">Cerveza de Temporada</h3>
+            <p class="text-gray-700">Sabores únicos según la estación - $20.000</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-lg">
+            <h3 class="text-xl font-semibold">Cerveza Especial</h3>
+            <p class="text-gray-700">Elaborada con ingredientes selectos - $22.000</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="bg-[#FBB03B] text-white text-center p-4 mt-6">
+        &copy; 2025 La Cervecería del Barrio - Todos los derechos reservados
+    </footer>
+</body>
+</html>
